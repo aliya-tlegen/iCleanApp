@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/codee2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iClean"
+        android:drawablePadding="10dp"
+        android:hint="Введите новый пароль"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#8F8686"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp">
+
+
+    </EditText>
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/open_sans"
+        android:text="Готово"
+        android:textStyle="bold"
+        app:backgroundTint="#197BDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codee"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <EditText
+        android:id="@+id/codee"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iClean"
+        android:drawablePadding="10dp"
+        android:hint="Подтвердите новый пароль"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#8F8686"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="204dp">
+
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/passwordchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="628dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Cмена пароля"
+        android:textColor="@color/blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="27dp"
+        android:layout_height="33dp"
+        android:text="✖"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

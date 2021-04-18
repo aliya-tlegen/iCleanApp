@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluemain"
+    tools:context=".Services">
+
+    <TextView
+        android:id="@+id/tvServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="69dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:text="Услуги"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/line01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvMoikaSten"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:text="Мойка стен от 5000 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMoikaLustry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaSten"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/line01"
+        app:layout_constraintEnd_toEndOf="@+id/line01"
+        app:layout_constraintTop_toTopOf="@+id/tvMoikaSten"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/line01"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="69dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/line02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvServices" />
+
+    <TextView
+        android:id="@+id/tvMoikaLustry"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:singleLine="false"
+        android:text="Мойка люстры от 1000 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/line02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line01" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaLustry"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/line02"
+        app:layout_constraintEnd_toEndOf="@+id/line01"
+        app:layout_constraintTop_toBottomOf="@+id/line01"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/line02"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="71dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/line03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line01" />
+
+    <TextView
+        android:id="@+id/tvMoikaPosudy"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Мойка посуды от 500 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/line03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line02" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaPosudy"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/line03"
+        app:layout_constraintEnd_toEndOf="@+id/line02"
+        app:layout_constraintTop_toBottomOf="@+id/line02"
+        app:layout_constraintVertical_bias="0.49"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/line03"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/line04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line02" />
+
+    <TextView
+        android:id="@+id/tvMoikaDuhovki"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Мойка духовки от 2000 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/line04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line03" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaDuhovki"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/line04"
+        app:layout_constraintEnd_toEndOf="@+id/line03"
+        app:layout_constraintTop_toBottomOf="@+id/line03"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/line04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toTopOf="@+id/line05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line03" />
+
+    <TextView
+        android:id="@+id/tvMoikaMicro"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:singleLine="false"
+        android:text="Мойка микроволновки
+        от 1000 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/line05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line04" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaMicro"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/line05"
+        app:layout_constraintEnd_toEndOf="@+id/line04"
+        app:layout_constraintTop_toBottomOf="@+id/line04"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/line05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="242dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line04" />
+
+    <TextView
+        android:id="@+id/tvMoikaHolo"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Мойка холодильника
+        от 2000 ₸"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoikaMicro"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/ivAddMoikaHolo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMoikaHolo"
+        app:layout_constraintEnd_toEndOf="@+id/line05"
+        app:layout_constraintTop_toBottomOf="@+id/line05"
+        app:srcCompat="@drawable/add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

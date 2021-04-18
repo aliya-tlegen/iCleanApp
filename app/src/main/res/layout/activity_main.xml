@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordornumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/open_sans"
+        android:text="Войти"
+        android:textStyle="bold"
+        app:backgroundTint="#197BDD"
+        app:iconTint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iClean"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="281dp"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordornumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordornumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="19dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Забыли пароль?"
+        android:textColor="#8F8686"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/remember_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordornumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="107dp"
+        android:checked="false"
+        android:fontFamily="@font/open_sans"
+        android:text="Запомнить пароль"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/iClean"
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="547dp"
+        android:src="@drawable/iclean" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="336dp"
+        android:layout_marginBottom="684dp"
+        android:fontFamily="@font/vibur"
+        android:text="iClean"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iClean"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Добро пожаловать в iClean!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="75dp"
+        android:text="Введите свою почту и пароль, чтобы войти" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="214dp"
+        android:layout_marginBottom="91dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Нет аккаунта? " />
+
+    <TextView
+        android:id="@+id/passwordchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="91dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans"
+        android:text="Зарегистрируйтесь" />
+
+
+</RelativeLayout>
